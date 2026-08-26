@@ -1,43 +1,47 @@
-import { Sparkles, BrainCircuit, Code, BookOpen, LineChart } from 'lucide-react';
+import { Sparkles, BrainCircuit, Code, LineChart } from 'lucide-react';
 
 export function LearningJourney() {
   const steps = [
     {
-      phase: 'Phase 1: Foundations',
-      status: 'In Progress (Sem 1 & 2)',
-      icon: <Code className="w-5 h-5 text-cyan-500" />,
-      title: 'Logic & Systems Programming',
-      description: 'Building structural coding logic. Mastering pointers, arrays, and memory in C, and scripting essentials in Python. Tackling mathematical pre-requisites: Linear Algebra and Calculus.',
-      focus: ['C Programming', 'Python basics', 'Mathematics', 'Logical reasoning'],
-      isActive: true,
-    },
-    {
-      phase: 'Phase 2: Data Core',
-      status: 'Upcoming Focus',
-      icon: <LineChart className="w-5 h-5 text-violet-500" />,
-      title: 'Data Structures & Analysis',
-      description: 'Strengthening fundamental data representations (stacks, trees, graphs) and applying them using Python. Learning data clean-up, analysis, and exploratory analysis tools (NumPy, Pandas).',
-      focus: ['Data Structures', 'NumPy & Pandas', 'Data Visualisation', 'Object-Oriented Design'],
-      isActive: false,
-    },
-    {
-      phase: 'Phase 3: Machine Learning',
-      status: 'Future Focus',
-      icon: <BrainCircuit className="w-5 h-5 text-emerald-500" />,
-      title: 'Algorithms & Models',
-      description: 'Diving into supervised and unsupervised statistical learning models. Studying regression, classification, clustering algorithms, and the underlying probability and statistics.',
-      focus: ['Scikit-Learn', 'Statistical Inference', 'Supervised Learning', 'Feature Engineering'],
-      isActive: false,
-    },
-    {
-      phase: 'Phase 4: Applied AI',
-      status: 'Long-term Goal',
-      icon: <Sparkles className="w-5 h-5 text-amber-500" />,
-      title: 'Neural Networks & Deep Learning',
-      description: 'Developing neural network models using frameworks like PyTorch or TensorFlow. Participating in hackathons and building real-world predictive models on tabular and unstructured data.',
-      focus: ['Deep Learning', 'PyTorch / TensorFlow', 'Computer Vision / NLP', 'Capstone projects'],
-      isActive: false,
-    },
+    phase: 'Phase 1: Foundations',
+    status: 'Completed / Strengthening',
+    icon: <Code className="w-5 h-5 text-cyan-500" />,
+    title: 'Programming Fundamentals',
+    description:
+      'Building a strong programming foundation through C and Python while improving logical thinking, problem-solving, and understanding of core programming concepts.',
+    focus: ['C Programming', 'Python', 'Problem Solving', 'Programming Fundamentals'],
+    isActive: false,
+  },
+  {
+    phase: 'Phase 2: DSA',
+    status: 'Currently Learning',
+    icon: <LineChart className="w-5 h-5 text-violet-500" />,
+    title: 'Data Structures & Problem Solving',
+    description:
+      'Currently learning fundamental data structures and practicing problem solving through coding challenges. Focusing on understanding concepts and improving consistency rather than just solving large numbers of problems.',
+    focus: ['Arrays', 'Strings', 'Linked Lists', 'Stacks', 'Sorting'],
+    isActive: true,
+  },
+  {
+    phase: 'Phase 3: Development',
+    status: 'Exploring',
+    icon: <Code className="w-5 h-5 text-emerald-500" />,
+    title: 'Software Development',
+    description:
+      'Exploring software development through small projects and practical experimentation. Building familiarity with web technologies, Node.js, and databases while improving my ability to build and explain projects.',
+    focus: ['HTML & CSS', 'JavaScript', 'Node.js', 'MySQL'],
+    isActive: false,
+  },
+  {
+    phase: 'Phase 4: AI & Data Science',
+    status: 'Future Focus',
+    icon: <BrainCircuit className="w-5 h-5 text-amber-500" />,
+    title: 'Exploring AI & Data Science',
+    description:
+      'Planning to gradually explore data analysis, machine learning, and AI through structured learning and hands-on projects after strengthening my programming and problem-solving foundations.',
+    focus: ['Data Analysis', 'Machine Learning', 'Statistics', 'AI Projects'],
+    isActive: false,
+  },
   ];
 
   return (
@@ -50,7 +54,7 @@ export function LearningJourney() {
             Learning Journey
           </h2>
           <p className="mt-4 text-slate-500 dark:text-slate-400">
-            A structured roadmap showcasing my path towards becoming an Artificial Intelligence & Data Science professional.
+            A snapshot of what I have learned, what I am currently working on, and the areas I plan to explore next.
           </p>
           <div className="w-16 h-1 bg-gradient-to-r from-primary-cyan to-primary-violet mx-auto mt-4 rounded-full"></div>
         </div>
@@ -123,18 +127,7 @@ export function LearningJourney() {
           ))}
         </div>
 
-        {/* Self Learning Quote */}
-        <div className="mt-16 p-6 rounded-2xl border border-slate-200/50 dark:border-slate-850 bg-light-card dark:bg-dark-card glass max-w-4xl mx-auto flex items-center gap-4 flex-col sm:flex-row text-center sm:text-left">
-          <BookOpen className="w-12 h-12 text-violet-500 flex-shrink-0" />
-          <div>
-            <h4 className="text-lg font-bold text-slate-900 dark:text-white">
-              Continuous Skill Development
-            </h4>
-            <p className="text-slate-600 dark:text-slate-350 text-sm mt-1">
-              "The capacity to learn is a gift; the ability to learn is a skill; the willingness to learn is a choice." I choose to spend my semesters actively exploring coding problems, documentation, and logic designs beyond the basic classroom syllabus.
-            </p>
-          </div>
-        </div>
+        
 
       </div>
     </section>
