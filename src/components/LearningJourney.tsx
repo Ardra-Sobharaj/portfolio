@@ -1,4 +1,4 @@
-import { Sparkles, BrainCircuit, Code, LineChart } from 'lucide-react';
+import { BrainCircuit, Code, LineChart } from 'lucide-react';
 
 export function LearningJourney() {
   const steps = [
