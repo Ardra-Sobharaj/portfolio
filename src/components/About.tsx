@@ -19,8 +19,9 @@ export function About() {
     },
     {
       icon: <Lightbulb className="w-6 h-6 text-amber-500" />,
-      title: 'Continuous Growth',
-      description: 'Actively participating in hands-on mini projects, technical communities, and self-directed coding courses.',
+      title: 'Continuous Learning',
+      description: 'Building my skills through coding practice, projects, coursework, and exploring new areas of software development and AI/ML.',
+      
     },
   ];
 
@@ -41,15 +42,15 @@ export function About() {
           {/* Text Description */}
           <div className="lg:col-span-6 space-y-6">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
-              Building the Future with Code and Intelligence
+              Building my foundation through code.
             </h3>
             
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              I am a second-semester Artificial Intelligence & Data Science student. My fascination with technology began with programming, and it has evolved into a deep interest in machine learning, data structures, and computer graphics.
+              I am a 3rd-semester Artificial Intelligence & Data Science student with a growing interest in software development, AI/ML, data science, and problem-solving. I am currently strengthening my programming fundamentals in C and Python while learning Data Structures and Algorithms.
             </p>
             
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              Currently, I am building my technical core through coursework, practical laboratory work, and personal coding projects. I thrive on problem-solving and love the process of taking an abstract concept—like mathematical shapes—and bringing it to life on screen through code.
+              Currently, I am building my technical foundation through coursework, DSA practice, and hands-on projects. I enjoy breaking problems into smaller steps, understanding the logic behind solutions, and improving my coding skills through consistent practice.
             </p>
 
             <div className="pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-wrap gap-4">
