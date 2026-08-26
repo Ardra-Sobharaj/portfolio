@@ -142,35 +142,51 @@ export function Projects() {
   // Projects list
   const projects = [
     {
-      title: '2D Graphics Shapes Project',
-      tag: 'Featured Project',
+      title: '2D Graphics Shapes - Mini Project',
+      tag: 'Academic mini Project',
       tech: ['C Programming', 'OpenGL / GLUT', 'Computer Graphics'],
       description:
-        'A comprehensive computer graphics mini project that generates and renders 2D geometric shapes dynamically. Implements basic polygon plotting, matrix translation, scaling, and rotation algorithms.',
+        'A mini project exploring the generation and rendering of 2D geometric shapes using C and OpenGL/GLUT, with implementations of basic geometric transformations.',
       features: [
-        'Trigonometric rendering of circles and polygons',
-        'Interactive inputs to manipulate scaling and rotation angles',
-        'Wireframe vs. shaded rendering styles',
-        'Coordinate calculation and screen-to-world mapping',
+        'Rendering of 2D geometric shapes',
+        'Implementation of translation, scaling, and rotation',
+        'Coordinate-based shape generation',
+        'Exploration of basic computer graphics concepts',
       ],
       github: 'https://github.com/Ardra-Sobharaj/2d-graphics-shapes',
-      isInteractive: true,
-    },
-    {
-      title: 'Student Performance & Grade Analyzer',
-      tag: 'Academic Project',
-      tech: ['Python', 'Matplotlib', 'CSV File I/O'],
-      description:
-        'A Python utility to store, analyze, and visualize student performance records. Computes class averages, standard deviation, and outputs charts representing grade distributions.',
-      features: [
-        'Read and write student records from CSV files',
-        'Statistical distribution analysis (mean, median, GPA)',
-        'Generates bar charts and histograms using Matplotlib',
-        'Modular terminal dashboard design',
-      ],
-      github: 'https://github.com/Ardra-Sobharaj/student-grade-analyzer',
       isInteractive: false,
     },
+    {
+      title: 'Smart Door Lock System',
+      tag: 'Team Project',
+      tech: ['Arduino', 'Keypad', 'LCD', 'Servo Motor'],
+      description:
+         'A team-based Arduino project that implements a password-based door authentication system using a keypad, LCD display, buzzer, and servo motor.',
+      features: [
+         'Password-based authentication',
+         'Keypad input and LCD feedback',
+         'Servo motor-based door control',
+         'Buzzer-based system feedback',
+  ],
+      github: '',
+      isInteractive: false,
+    },
+    {
+  title: 'Personal Portfolio',
+  tag: 'Personal Project',
+  tech: ['React', 'TypeScript', 'Vite'],
+  description:
+    'A personal portfolio website created to showcase my education, skills, projects, and learning journey.',
+  features: [
+    'Responsive portfolio interface',
+    'Dark and light mode',
+    'Project and education sections',
+    'Deployed using Vercel',
+  ],
+  github: 'https://github.com/Ardra-Sobharaj/portfolio?utm_source=chatgpt.com',
+  demo: 'https://portfolio-7vzc53lx3-ardra-sobharaj-s-projects.vercel.app/?utm_source=chatgpt.com',
+  isInteractive: false,
+},
   ];
 
   return (
