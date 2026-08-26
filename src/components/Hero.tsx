@@ -45,7 +45,7 @@ export function Hero() {
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
-            I am a second-semester B.Tech Artificial Intelligence & Data Science student at REVA University. Passionate about technology, programming, problem-solving, and building smart software solutions.
+            I am a 3rd-semester B.Tech Artificial Intelligence & Data Science student at REVA University, focused on strengthening my programming skills, learning Data Structures and Algorithms, and exploring software development, AI/ML, and data science.
           </p>
 
           {/* Quick Academic Card */}
@@ -70,7 +70,7 @@ export function Hero() {
               <Cpu className="w-5 h-5 text-emerald-500" />
               <div>
                 <div className="text-xs text-slate-500">Current Status</div>
-                <div className="text-sm font-semibold">2nd Semester</div>
+                <div className="text-sm font-semibold">3rd Semester</div>
               </div>
             </div>
           </div>
