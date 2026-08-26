@@ -183,8 +183,8 @@ export function Projects() {
     'Project and education sections',
     'Deployed using Vercel',
   ],
-  github: 'https://github.com/Ardra-Sobharaj/portfolio?utm_source=chatgpt.com',
-  demo: 'https://portfolio-7vzc53lx3-ardra-sobharaj-s-projects.vercel.app/?utm_source=chatgpt.com',
+  github: 'https://github.com/Ardra-Sobharaj/portfolio',
+  demo: 'https://portfolio-7vzc53lx3-ardra-sobharaj-s-projects.vercel.app/',
   isInteractive: false,
 },
   ];
@@ -196,7 +196,7 @@ export function Projects() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">
-            Academic Projects
+           Projects
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-primary-cyan to-primary-violet mx-auto mt-4 rounded-full"></div>
         </div>
@@ -357,15 +357,28 @@ export function Projects() {
 
               {/* Action Buttons */}
               <div className="flex items-center gap-4 mt-auto border-t border-slate-100 dark:border-slate-850 pt-4">
-                <a
-                  href={proj.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
-                >
-                  <Github className="w-4 h-4 mr-1.5" />
-                  Code Repository
-                </a>
+                {proj.github && (
+  <a
+    href={proj.github}
+    target="_blank"
+    rel="noreferrer"
+    className="flex items-center text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
+  >
+    <Github className="w-4 h-4 mr-1.5" />
+    Code Repository
+  </a>
+)}
+                {proj.demo && (
+  <a
+    href={proj.demo}
+    target="_blank"
+    rel="noreferrer"
+    className="flex items-center text-xs font-semibold text-slate-600 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"
+  >
+    <Play className="w-4 h-4 mr-1.5" />
+    Live Demo
+  </a>
+)}
                 
                 {proj.isInteractive && (
                   <span className="flex items-center text-xs font-semibold text-emerald-600 dark:text-emerald-400">
