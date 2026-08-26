@@ -84,24 +84,7 @@ export function Skills() {
           ))}
         </div>
 
-        {/* Conceptual Strengths Panel */}
-        <div className="p-6 rounded-xl border border-slate-200/40 dark:border-slate-800/40 bg-light-card/40 dark:bg-dark-card/40 text-center">
-          <h3 className="text-sm font-semibold tracking-wider text-slate-500 uppercase mb-6">
-            Strengths & Methodologies
-          </h3>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            {conceptualStrengths.map((strength, idx) => (
-              <div
-                key={idx}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-850 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 shadow-sm text-sm font-medium hover:border-cyan-500/50 dark:hover:border-cyan-500/30 transition-colors"
-              >
-                <span className="text-cyan-500">{strength.icon}</span>
-                <span>{strength.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
+        
       </div>
     </section>
   );
