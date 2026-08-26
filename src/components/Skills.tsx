@@ -1,41 +1,34 @@
-import { Code, GitPullRequest, Binary, PenTool, Cpu, FileJson } from 'lucide-react';
+import { Code, GitPullRequest, Binary} from 'lucide-react';
 
 export function Skills() {
   const skillCategories = [
     {
       title: 'Programming Languages',
       icon: <Code className="w-5 h-5 text-cyan-500" />,
-      skills: [
-        { name: 'C Programming', level: 85 },
-        { name: 'Python', level: 80 },
-        { name: 'JavaScript', level: 60 },
-      ],
+      skills: [ { name: 'C', level: 'Learning' }, 
+               { name: 'Python', level: 'Learning' }, 
+               { name: 'JavaScript', level: 'Beginner' }, 
+              ],
     },
     {
       title: 'Core Concepts',
       icon: <Binary className="w-5 h-5 text-violet-500" />,
-      skills: [
-        { name: 'Problem Solving', level: 85 },
-        { name: 'Algorithms & Logic', level: 75 },
-        { name: 'Linear Algebra & Math', level: 70 },
-      ],
+      skills: [ { name: 'Data Structures & Algorithms', level: 'Learning' }, 
+               { name: 'Problem Solving', level: 'Learning' },
+               { name: 'SQL / MySQL', level: 'Fundamentals' }, 
+              ],
     },
     {
-      title: 'Tools & Version Control',
+      title: 'Development and Tools',
       icon: <GitPullRequest className="w-5 h-5 text-emerald-500" />,
-      skills: [
-        { name: 'Git & GitHub', level: 80 },
-        { name: 'VS Code', level: 90 },
-        { name: 'Jupyter Notebook', level: 70 },
-      ],
+      skills: [ { name: 'HTML / CSS', level: 'Beginner' }, 
+               { name: 'Node.js', level: 'Beginner' },
+               { name: 'Git / GitHub', level: 'Beginner' },
+              ],
     },
   ];
 
-  const conceptualStrengths = [
-    { name: 'Data Visualization', icon: <PenTool className="w-4 h-4" /> },
-    { name: 'Algorithm Optimization', icon: <Cpu className="w-4 h-4" /> },
-    { name: 'Structured Code Design', icon: <FileJson className="w-4 h-4" /> },
-  ];
+ 
 
   return (
     <section id="skills" className="py-24 bg-slate-50 dark:bg-[#0c1220] transition-colors duration-300">
