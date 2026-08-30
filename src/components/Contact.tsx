@@ -40,8 +40,8 @@ export function Contact() {
     {
       icon: <Mail className="w-5 h-5 text-[#6B1F2A]" />,
       label: 'Email',
-      value: 'ardra.sobharaj@gmail.com',
-      href: 'mailto:ardra.sobharaj@gmail.com',
+      value: 'ardrasobharaj@gmail.com',
+      href: 'mailto:ardrasobharaj@gmail.com',
     },
     {
       icon: <Linkedin className="w-5 h-5 text-[#6B1F2A]" />,
